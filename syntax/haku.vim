@@ -42,7 +42,7 @@ syntax match hakuDocComment "\v^\s*##.*$" contains=hakuExecString,hakuVar,hakuIn
 syntax region hakuComment start=/\v^\s*\/\// end=/\v$/ contains=hakuExecString,hakuVar,hakuInnerVar
 syntax region hakuComment start=/\v^\s*#[^#\[]/ end=/\v$/ contains=hakuExecString,hakuVar,hakuInnerVar
 
-syntax match hakuNumber "\v\d+"
+syntax match hakuNumber "\v-?\d[0-9_]*"
 syntax match hakuExecSpecial   "\v^\s*[@-]+"
 
 syntax keyword hakuOperator and or not
